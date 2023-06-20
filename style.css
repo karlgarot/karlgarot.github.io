@@ -37,7 +37,7 @@ body{
 
   /* Fade in tooltip - takes 1 second to go from 0% to 100% opaque: */
   opacity: 0;
-  transition: opacity 1s;
+  transition: opacity .5s;
 }
 
 .tooltip:hover .tooltiptext {
@@ -56,11 +56,11 @@ body{
 
 
 .fa:hover {
-  color: black; transition: background-color 1s;
+  color: black; transition: background-color .5s;
 }
 
 
-.overlayable{color: black; transition: background-color 1s; border-style: dotted;}
+.overlayable{color: black; transition: background-color .5s; border-style: dotted;}
 
 .overlayable:hover {
   background-color: black;
@@ -68,12 +68,18 @@ body{
 }
 
 
-p{font-size: 13px; margin-top: 2px;   line-height: 18px; text-decoration: none; border-style: solid;}
+p{font-size: 14px; margin-top: 2px;   line-height: 18px; text-decoration: none; border-style: solid;}
 h5{margin-bottom: 1px; margin-top: 7px;font-size: 14px;}
 
-.container{text-align:left; border-style: solid; border-color: red; width:60%; margin:0 auto;}
+.container{
+  text-align:left;
+  border-style: solid;
+  border-color: red;
+  width:60%;
+  margin:0 auto;}
+
 div#header{background-color:#FFFFFF; border-style: dotted;}
-div#header h1{height:60px;line-height:80px;margin:0;padding-left:0px;}
+div#header h1{height:60px;line-height:80px; margin:0; padding-left:0px;}
 
 div#navigation{
   margin:0;
@@ -93,7 +99,7 @@ div#navigation a{
   color: #000000;
   padding: 5px;
   text-decoration: none;
-  transition: background-color 1s;
+  transition: background-color .5s;
   border-style: dotted;
 }
 div#navigation a:hover{
@@ -102,8 +108,15 @@ div#navigation a:hover{
   text-decoration: none;
 }
 
+/*
+@media screen and (max-width: 600px) {
+  div.example {
+    font-size: 30px;
+  }
+}
+*/
+
 div.content{
-  position absolute;
   margin-left: 160px;
   margin-bottom: 100px;
   height: auto;
@@ -142,17 +155,17 @@ div.content{
   margin: 0 auto;
   border-style: solid;
   border-color: blue;
-  transition: 1s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 .inside_content_works:hover .overlay {
   opacity: 1;
-  transition: 1s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 .inside_content_works:hover .image_overlay{
   filter: grayscale(100%) invert(100%);
-  transition: 1s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 .image_overlay{
@@ -164,7 +177,7 @@ div.content{
   border-style: dotted;
   filter: grayscale(100%);
   filter: invert(0);
-  transition: 1s ease-in-out;
+  transition: .5s ease-in-out;
 }
 .text_1{
   position: relative;
@@ -190,7 +203,7 @@ div.content{
   font-size: 20px;
   padding: 20px;
   text-align: center;
-  transition: opacity 1s;
+  transition: opacity .5s;
 }
 
 .inside_content_index:hover .overlay {
@@ -216,21 +229,6 @@ div.content{
   background: #000000;
 }
 
-
-
-@media screen and (max-width: 1200px) { /* Quando la dimensione dello schermo è pari o inferiore a 720px la sidebar va sopra */
-  div#navigation{
-    width: 30%;
-    height: auto;
-    position: relative;
-  }
-  div#navigation a {
-    text-align: center;
-    float: none;
-  }
-  div#navigation ul {float: left;}
-  div.content {margin-left: 0px;}
-}
 
 .column:hover .overlay_works{
   opacity: 1;
@@ -282,3 +280,47 @@ div.content{
 div#footer{background: #FFFFFF; margin-top: 30px; border-style: dotted;}
 div#footer p{margin:0; padding:20px 20px;}
 div#footer{clear:both; width:100%; text-align:center; font-size: 13px; position: fixed; left: 0; bottom:0;}
+
+
+
+
+
+@media screen and (max-width: 800px) {
+  .container{
+    width:80%;
+  }
+  p{font-size: 15px;}
+  div#navigation{
+    font-size: 19px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    background-color: white;
+  }
+  div#navigation ul {float: left;}
+  div.content {margin-left: 0px; margin-top: 200px;}
+  div#navigation a {
+    text-align: center;
+    float: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container{
+    width:95%;
+  }
+  p{font-size: 17px;}
+  div#navigation{
+    font-size: 20px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    background-color: white;
+  }
+  div.content {margin-left: 0px; margin-top: 200px;}
+  div#navigation ul {float: left;}
+  div#navigation a {
+    text-align: center;
+    float: none;
+  }
+}

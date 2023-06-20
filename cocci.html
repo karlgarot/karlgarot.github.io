@@ -2,14 +2,14 @@
 <head>
   <title>Cocci/Frammenti di passaggi</title>
   <link rel="icon" type="image/x-icon" href="src\img\favicon.png">
-  <meta http-equiv="content-type" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="./style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
 </head>
-<body oncontextmenu="return false;">
+<body oncontextmenu="return false;" oncopy="return false" oncut="return false">
   <div class="container">
     <div id="header">
       <h1><a></a></h1>
@@ -20,7 +20,7 @@
       <a href="./index.html" class="overlayable">carlo gioia</a>
       <p></p>
       <p></p>
-      <a href="./about.html" >about.</a>
+      <a href="./about.html" class="overlayable">about.</a>
       <a href="./works.html" style="background-color: black; color: white;">works.</a>
       <a href="./other.html" class="overlayable">other.</a>
     </div>
@@ -28,9 +28,9 @@
     <div class="content">
       <div class="inside_content_about">
         <div class="row" style="margin-left:10%; margin-right:10%;">
-          <div class="column left" style="width: 25%; text-align: center;"><p><a href="./works.html" class="overlayable tooltip">back.<span class="tooltiptext">works.</span></a></p></div>
-          <div class="column middle" style="width: 50%; text-align: center;"><p style="font-size: 16px;">Il giorno in cui tornammo ai campi</p></div>
-          <div class="column right" style="width: 25%; text-align: center;"><p><a href="./interfaccepopolari.html" class="overlayable tooltip">next.<span class="tooltiptext">Interfacce popolari</span></a></p></div>
+          <div class="column left" style="width: 25%; text-align: center;"><p><a href="./interfaccepopolari.html" class="overlayable tooltip">back.<span class="tooltiptext">Interfacce popolari.</span></a></p></div>
+          <div class="column middle" style="width: 50%; text-align: center;"><p style="font-size: 16px;">Cocci/Frammenti di passaggi</p></div>
+          <div class="column right" style="width: 25%; text-align: center;"><p><a href="./interfaccepopolari.html" class="overlayable tooltip"><span class="tooltiptext">Interfacce popolari</span></a></p></div>
         </div>
         <br>
         <br>
@@ -38,8 +38,8 @@
           <div class="column" style="width:100%;">
             <div class="inside_content_index">
               <div>
-                <video width=100% loop autoplay muted>
-                  <source src="src\img\ilgiornoincuitornammoaicampi\ResiduaDataSculpting.mp4" type="video/mp4">
+                <video width="100%" loop autoplay muted>
+                  <source src="src\img\cocci\cocci_intro.mp4" type="video/mp4">
                   </video>
                 </div>
               </div>
@@ -51,7 +51,9 @@
             <div class="column" style="width:100%;">
               <div class="inside_content_index" >
                 <p style="font-size:14px;"><b>about.</b><br></p>
-                <p style="text-align: justify;"><i>Il Giorno in cui Tornammo ai Campi </i>(<i>The Day We Returned to the Fields</i>) is an installation that takes the form of a multimedia landscape, in which the means of technical reading of the territory leave their usual sphere of application to become a sensitive monograph of places, those of the disused industrial areas bordering the Fondovalle del Sinni, in Basilicata. As visitors follow the exhibition route, cartography, photogrammetry and photography on technical paper dictate the slow approach towards the microscopic datum, a sensitive representation of those places. The video installation <i>Zone Morte</i> (<i>Dead Zones</i>) is a virtual journey inside the database of the Basilicata Geoportal, which returns, by subtraction, the map of industrial voids.  Wind speed, temperature, humidity, barometric pressure, rain, air quality, sound, movement, are some of the data collected in real time by <i>Resìdua</i>, a self-built device using electronic material found in those places, to monitor their biological transformations.  The resulting data sculpting is a living organism responsive to visitor contact.</p>
+                <p style="text-align: justify;">
+                  <i>"Cocci - Frammenti di passaggi" (Shards - fragments of passages)</i> is an exploratory journey into remembrance, in the form of an interactive graphic experience usable via desktop or HMD, which uses virtual reality as a means to expand our concept of "place": a space that, when deprived of the conventional expressions that identify it to the senses, manifests itself and allows itself to be interpreted, only through the traces that man has left in his passage. The landscape proposed to the user, is the Point Cloud reconstruction of the woods that inspired this experience: those bordering the "Peschiera," at the foot of the Pollino National Park, in Basilicata; here the places seem not to be affected by the passage of time, and it is possible to find, in the morning walks, when the grass is low for dew, ancient shards of pots and tiles, with various shapes and sizes, that only the trees, silent witnesses, know who left there. The user is invited to explore a desolate and ethereal world, but one populated with memories, of which each shard he encounters on his path is a tangible fragment. The shards serve as visual and acoustic stimuli, with the aim of arousing sensations, impressions, and feelings in the user, and are placed in such a way as to stimulate and guide the person who picks them up into exploration.
+                </p>
               </div>
             </div>
           </div>
@@ -67,8 +69,8 @@
           <br>
 
           <div class="row" style="text-align:center;">
-            <p style="margin-left:10vw; margin-right:12vw;">
-              <i>"Today those places, a visual friction of the landscape, stand on both sides of the Sinni Valley State Road 653, shaping its horizon, diverting the gaze of the passer-by driving along it. From Lauria to Policoloro, passing through the villages of Latronico, Episcopia, Fardella, Chiaromonte and Francavilla, and then on to Senise, Colobraro, Noepoli, Valsinni and Tursi, the disused industrial areas embody the identity of these communities, a shared fragment of a collective conscience that unites us under a common yesterday"</i>
+            <p style="margin-left:10vw; margin-right:12vw; text-align: justify;">
+              <i>"Every time I cross these woods, even if years apart, I have the feeling that they have not undergone the passage of time at all. Remaining always the same, the landscape no longer exists to my eyes, which now perceive it as hazy, insubstantial, while something else captures my attention: building shards, tiles of various shapes and sizes, which I find along the way. Who left them there? To which house did they belong? Who lived in it and what stories did it have to tell?"</i>
             </p>
           </div>
 
@@ -79,257 +81,86 @@
           <div class="row">
             <div class="column">
               <div class="inside_content_works">
-                <img src="src\img\ilgiornoincuitornammoaicampi\zone morte.jpg" alt="me" class="image_overlay">
+                <img src="src\img\cocci\coccio1.png" alt="me" class="image_overlay">
                 <div class="overlay">
-                  <div class="overlay_text">Zone Morte/1</div>
+                  <div class="overlay_text">Coccio/#23</div>
                 </div>
               </div>
             </div>
             <div class="column">
               <div class="inside_content_works">
-                <img src="src\img\ilgiornoincuitornammoaicampi\Zone_morte 2.jpg" alt="me" class="image_overlay">
-                <div class="overlay">
-                  <div class="overlay_text">Zone Morte/2</div>
-                </div>
+                <p>Title: <br>I venti/<i>The winds</i></p>
+                <p>Description: <br>Maria racconta i venti della sua infanzia/<i>Maria talks about the winds of her childhood</i></p>
+                <details>
+                  <summary style="font-size:13px; cursor: pointer;"><a class="overlayable">Content</a></summary>
+                  <p style="text-align: justify;">Local dialect:<br>
+                    Quann tirav "a' voria" - iera accussì ca chiamamm ù vent i vascij, "voria - ier bell, nun chiuvì maij; certu iè ca faciv fridd, ma ù ciel iera semp sincìr, e i iurnat eran assai bell.
+                    Au cuntrarij "ù punent" ù chiamamm "uaddarus", picchì chiuvì semp e c'era à neglij, nun vidis maij ù sol.
+                    Uvì picchì u chiamamm "uaddarus", picchì ier nu vient cup, purtav nuvl, neglij, chiùvì, quistu facì.
+                  </p>
+                  <p style="text-align: justify;">IT:<br>
+                    Quando tirava "a' voria"- era così che chiamavamo il vento da sud, "voria" - era bello, non pioveva mai; certo, faceva freddo, ma il cielo era sempre limpido, e le giornate erano belle.
+                    Al contrario il ponente lo chiamavamo "u' uaddarus", perchè pioveva e c'era la nebbia, non vedevi minimamente il sole.
+                    Ecco perchè lo chiamavamo "uaddarus", perchè era un vento cupo, portava con sè le nubi, la nebbia, pioveva, questo faceva.
+                  </p>
+                  <p style="text-align: justify;">EN:<br>
+                    When it pulled 'a' voria' - that's how we called the wind from the south, 'voria' - it was nice, it never rained; sure, it was cold, but the sky was always clear, and the days were beautiful.
+                    On the contrary, we called the west wind 'u' uaddarus', because it rained and there was fog, you couldn't see the sun at all.
+                    That's why we called it 'u' uaddarus', because it was a gloomy wind, it brought with it clouds, fog, it rained, that's what it did.
+                  </p>
+                  <br>
+                </details>
               </div>
             </div>
           </div>
 
+
           <div class="row">
-            <div class="column" style="width:100%;">
-              <div class="inside_content_index">
-                <div>
-                  <video width=100% loop autoplay muted>
-                    <source src="src\img\ilgiornoincuitornammoaicampi\ZoneMorte Video.mp4" type="video/mp4">
-                    </video>
-                  </div>
+            <div class="column">
+              <div class="inside_content_works">
+                <img src="src\img\cocci\coccio2.png" alt="me" class="image_overlay">
+                <div class="overlay">
+                  <div class="overlay_text">Coccio/#27</div>
                 </div>
               </div>
             </div>
-
-            <div class="row">
-              <div class="column">
-                <div class="inside_content_works">
-                  <img src="src\img\ilgiornoincuitornammoaicampi\zone morte 3.jpg" alt="me" class="image_overlay">
-                  <div class="overlay">
-                    <div class="overlay_text">Zone Morte/3</div>
-                  </div>
-                </div>
-              </div>
-              <div class="column">
-                <div class="inside_content_works">
-                  <img src="src\img\ilgiornoincuitornammoaicampi\zone morte 4.jpg" alt="me" class="image_overlay">
-                  <div class="overlay">
-                    <div class="overlay_text">Zone Morte/3</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <br>
-            <br>
-
-            <div class="row" style="text-align:center;">
-              <p style="margin-left:15vw; margin-right:15vw;">
-                <i>
-                  "... far from being static, they are the scene of a dynamic biological evolution, of a play of internal and external exchanges with the surrounding environment that takes place undisturbed by the absence of man"
-                </i>
-              </p>
-            </div>
-
-            <br>
-            <br>
-
-            <div class="row">
-                <div class="inside_content_works" style="width:50%;">
-                  <img src="src\img\ilgiornoincuitornammoaicampi\Scambi.png" alt="me" class="image_overlay">
-                  <div class="overlay">
-                    <div class="overlay_text">Gilles Clément &#169; Exchanges with the surrounding environment “natural” influences</div>
-                  </div>
-                </div>
-            </div>
-
-            <br>
-            <br>
-            <br>
-
-
-            <div class="row">
-                <div class="inside_content_works" style="width:50%;">
-                  <img src="src\img\ilgiornoincuitornammoaicampi\ResìduaSensor.JPG" alt="me" class="image_overlay">
-                  <div class="overlay">
-                    <div class="overlay_text">Resìdua/A Long Term Brownfield Monitoring System Oriented to Real Time Data Sculpting</div>
-                  </div>
-                </div>
-            </div>
-
-            <br>
-
-            <div class="row">
-                <div class="inside_content_works" style="width:50%;">
-                  <img src="src\img\ilgiornoincuitornammoaicampi\ElementaUI.jpg" alt="me" class="image_overlay">
-                  <div class="overlay">
-                    <div class="overlay_text">Dataset UI</div>
-                  </div>
-                </div>
-            </div>
-
-
-            <br>
-            <br>
-
-            <div class="row" style="text-align:center;">
-              <p style="margin-left:15vw; margin-right:15vw;">
-                <i>
-                  "In their appearance suspended in time, these places await the day when someone notices them and pays them a visit, with the solemnity of one who enters a sacred place, without disturbing, on tiptoe..."
-                </i>
-              </p>
-            </div>
-
-            <br>
-            <br>
-
-            <div class="row">
-              <div class="column" style="width:100%;">
-                <div class="inside_content_index">
-                  <div>
-                    <video width=100% loop autoplay muted>
-                      <source src="src\img\ilgiornoincuitornammoaicampi\ResiduaInteraction.mp4" type="video/mp4">
-                      </video>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="column">
-                  <div class="inside_content_index" >
-                    <img src="src\img\ilgiornoincuitornammoaicampi\TouchResidua.jpg" alt="me" class="image_overlay" style="max-width: 100%;">
-                    <div class="overlay">
-                      <div class="overlay_text">Resìdua/1</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="column">
-                  <div class="inside_content_index" >
-                    <img src="src\img\ilgiornoincuitornammoaicampi\TouchSabbia.jpg" alt="me" class="image_overlay" style="max-width: 100%;">
-                    <div class="overlay">
-                      <div class="overlay_text">Resìdua/2</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-
-
-
-
-              <br>
-              <br>
-              <br>
-              <br>
-
-
-              <div class="row" style="text-align:center;">
-                <p style="margin-left:15vw; margin-right:15vw;">
-                  <i>
-                    "...and without asking permission, because at the moment of their abandonment, anyone has lost dominion over them.
-                  </i>
-                </p>
-                <p style="margin-left:15vw; margin-right:15vw;">
-                  <i>
-                    "Now they belong to something else: to rust, to nature, to sound, to silence."
-                  </i>
-                </p>
-              </div>
-
-
-              <br>
-              <br>
-              <hr class="solid" style="border-top: 1px solid #bbb; width:75%;">
-              <br>
-              <br>
-
-
-              <div class="row">
-                <div class="column" style="width:100%;">
-                  <div class="inside_content_index" >
-                    <p style="text-align: justify; font-size:15px;">
-                      <b>gallery.</b>
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="column" style="width:100%">
-                  <div class="inside_content_index" >
-                    <img src="src\img\ilgiornoincuitornammoaicampi\Registrazione.jpg" alt="me" class="image_overlay" style="max-width: 100%;">
-                    <div class="overlay">
-                      <div class="overlay_text">Brownfield recording</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="column" style="width:100%">
-                  <div class="inside_content_index" >
-                    <img src="src\img\ilgiornoincuitornammoaicampi\Mappa.jpg" alt="me" class="image_overlay" style="max-width: 100%;">
-                    <div class="overlay">
-                      <div class="overlay_text">Fotographic exhibition/3</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="column">
-                  <div class="inside_content_index" >
-                    <img src="src\img\ilgiornoincuitornammoaicampi\1.jpg" alt="me" class="image_overlay" style="max-width: 100%;">
-                    <div class="overlay">
-                      <div class="overlay_text">40.1800902512621, 16.44286858523331</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="column">
-                  <div class="inside_content_index" >
-                    <img src="src\img\ilgiornoincuitornammoaicampi\2.jpg" alt="me" class="image_overlay" style="max-width: 100%;">
-                    <div class="overlay">
-                      <div class="overlay_text">40.12498018223166, 16.28861011887533</div>
-                    </div>
-                  </div>
-                </div>
-                </div
-                <div class="row">
-                  <div class="column">
-                    <div class="inside_content_index" >
-                      <img src="src\img\ilgiornoincuitornammoaicampi\3.jpg" alt="me" class="image_overlay" style="max-width: 100%;">
-                      <div class="overlay">
-                        <div class="overlay_text">40.20788782743648, 16.586208414997866</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="column">
-                    <div class="inside_content_index" >
-                      <img src="src\img\ilgiornoincuitornammoaicampi\4.jpg" alt="me" class="image_overlay" style="max-width: 100%;">
-                      <div class="overlay">
-                        <div class="overlay_text">40.207430557208575, 16.586237057343904</div>
-                      </div>
-                    </div>
-                  </div>
-                  </div
-                </div>
+            <div class="column">
+              <div class="inside_content_works">
+                <p>Title: <br>I venti/<i>The winds</i></p>
+                <p>Description: <br>Maria racconta i venti della sua infanzia/<i>Maria talks about the winds of her childhood</i></p>
+                <details>
+                  <summary style="font-size:13px; cursor: pointer;"><a class="overlayable">Content</a></summary>
+                  <p>Local dialect:<br>
+                    Ier'm dà fora, nn'anz ù studij da dottoress, quann cu at cristian parlamm - ndù suonn, mica verament, eh!
+                    A na certa m
+                  </p>
+                  <p>IT:<br>
+                    Eravamo lì fuori, dove adesso si trova lo studio della dottoressa,
+                    mentre con altre persone discutevamo - nel sonno, mica per davvero, eh!
+                    Ad un certo punto mi cade lo sguardo in un punto, e lì vedo una bara!
+                    La bara aveva il colore di questi mobili.
+                    E ho chiesto "E questa bara, chi ce l'ha messa qui?"
+                  </p>
+                  <p>EN:<br>
+                    When it pulled 'a' voria' - that's how we called the wind from the south, 'voria' - it was nice, it never rained; sure, it was cold, but the sky was always clear, and the days were beautiful.
+                    On the contrary, we called the west wind 'u' uaddarus', because it rained and there was fog, you couldn't see the sun at all.
+                    That's why we called it 'u' uaddarus', because it was a gloomy wind, it brought with it clouds, fog, it rained, that's what it did.
+                  </p>
+                </details>
               </div>
             </div>
+          </div>
 
-            <div id="footer" style="position: relative;">
-              <a href="https://www.instagram.com/karlgarot/" class="fa fa-instagram overlayable"></a>
-              <a href="https://github.com/karlgarot" class="fa fa-github overlayable"></a>
-              <a href="https://www.linkedin.com/in/carlo-gioia-a48264203/" class="fa fa-linkedin overlayable"></a>
-              <br>
-              2023 &copy Carlo Gioia - Proudly hosted by GitHub &#128420;
-              <br>
-              <br>
-            </div>
-          </body>
-          </html>
+
+
+          <div id="footer" style="position: relative;">
+            <a href="https://www.instagram.com/karlgarot/" class="fa fa-instagram overlayable"></a>
+            <a href="https://github.com/karlgarot" class="fa fa-github overlayable"></a>
+            <a href="https://www.linkedin.com/in/carlo-gioia-a48264203/" class="fa fa-linkedin overlayable"></a>
+            <br>
+            2023 &copy Carlo Gioia - Proudly hosted by GitHub &#128420;
+            <br>
+            <br>
+          </div>
+        </body>
+        </html>
