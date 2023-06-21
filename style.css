@@ -1,4 +1,9 @@
-html,body{margin:0; padding:0; overflow: auto;}
+html,body{
+  margin:0;
+  padding:0;
+  overflow: auto;
+}
+
 body{
   font-family:'Inter', sans-serif;
   text-align:center;
@@ -22,18 +27,18 @@ body{
 
 .tooltip .tooltiptext {
   visibility: hidden;
-   width: 120px;
-   background-color: black;
-   color: white;
-   text-align: center;
-   padding: 5px 0;
+  width: 120px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
 
-   /* Position the tooltip */
-   position: absolute;
-   z-index: 1;
-   top: 100%;
-   left: 50%;
-   margin-left: -60px;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
 
   /* Fade in tooltip - takes 1 second to go from 0% to 100% opaque: */
   opacity: 0;
@@ -60,7 +65,11 @@ body{
 }
 
 
-.overlayable{color: black; transition: background-color .5s; border-style: dotted;}
+.overlayable{
+  color: black;
+  transition: background-color .5s;
+  border-style: dotted;
+}
 
 .overlayable:hover {
   background-color: black;
@@ -68,55 +77,71 @@ body{
 }
 
 
-p{font-size: 14px; margin-top: 2px;   line-height: 18px; text-decoration: none; border-style: solid;}
-h5{margin-bottom: 1px; margin-top: 7px;font-size: 14px;}
+p{
+  font-size: 14px;
+  margin-top: 2px;
+  line-height: 18px;
+  text-decoration: none;
+  border-style: solid;
+}
+
+h5{margin-bottom: 1px;
+  margin-top: 7px;
+  font-size: 14px;}
 
 .container{
-  text-align:left;
-  border-style: solid;
-  border-color: red;
-  width:60%;
-  margin:0 auto;}
-
-div#header{background-color:#FFFFFF; border-style: dotted;}
-div#header h1{height:60px;line-height:80px; margin:0; padding-left:0px;}
-
-div#navigation{
-  margin:0;
-  padding: 0;
-  width: 150px;
-  background-color: rgba(0, 0, 0, 0);
-  position: fixed;
-  height: auto;
-  overflow: auto;
-  font-size: 16px;
-  font-weight: 300;
-  border-style: dotted;
-  z-index: 1;
-}
-div#navigation a{
-  display: block;
-  color: #000000;
-  padding: 5px;
-  text-decoration: none;
-  transition: background-color .5s;
-  border-style: dotted;
-}
-div#navigation a:hover{
-  background-color: #000000;
-  color: #FFFFFF;
-  text-decoration: none;
+    text-align:left;
+    border-style: solid;
+    border-color: red;
+    width:60%;
+    margin:0 auto;
 }
 
-/*
-@media screen and (max-width: 600px) {
-  div.example {
-    font-size: 30px;
+  div#header{
+    background-color:#FFFFFF;
+    border-style: dotted;
   }
-}
-*/
+
+  div#header h1{
+    height:60px;
+    line-height:80px;
+    margin:0;
+    padding-left:0px;
+  }
+
+  div#navigation{
+    margin-top:100px;
+    padding: 0;
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    height: auto;
+    overflow: auto;
+    font-size: 16px;
+    font-weight: 300;
+    border-style: dotted;
+    z-index: 1;
+  }
+
+  div#navigation a{
+    display: block;
+    color: #000000;
+    padding: 5px;
+    text-decoration: none;
+    transition: background-color .5s;
+    border-style: dotted;
+  }
+
+  div#navigation a:hover{
+    background-color: #000000;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+
+
 
 div.content{
+  margin-top: 45px;
   margin-left: 160px;
   margin-bottom: 100px;
   height: auto;
@@ -130,12 +155,12 @@ div.content{
 }
 
 @keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-     }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*>>>>>>>>> IMAGE AND OVERLAY - INDEX PAGE*/
@@ -255,11 +280,7 @@ div.content{
   padding: 10px;
   border-style: dotted;
 }
-@media screen and (max-width: 1500px) {
-  .column {
-    width: 100%;
-  }
-}
+
 
 
 
@@ -285,42 +306,82 @@ div#footer{clear:both; width:100%; text-align:center; font-size: 13px; position:
 
 
 
+
+
+
 @media screen and (max-width: 800px) {
   .container{
-    width:80%;
+    width:90%;
   }
-  p{font-size: 15px;}
+
+  p{
+    font-size: 15px;
+  }
+
   div#navigation{
+    margin-top:0px;
     font-size: 19px;
-    width: 100%;
+    width: 50%;
     height: auto;
     position: fixed;
     background-color: white;
   }
-  div#navigation ul {float: left;}
-  div.content {margin-left: 0px; margin-top: 200px;}
+
+  div#navigation ul {
+    float: left;
+  }
+
+  div.content {
+    margin-left: 0px;
+    margin-top: 200px;
+  }
+
   div#navigation a {
     text-align: center;
     float: none;
   }
 }
 
+
+
 @media screen and (max-width: 600px) {
   .container{
     width:95%;
   }
-  p{font-size: 17px;}
+  p{
+    font-size: 17px;
+  }
+
   div#navigation{
     font-size: 20px;
-    width: 100%;
+    width: 95%;
     height: auto;
     position: fixed;
     background-color: white;
   }
-  div.content {margin-left: 0px; margin-top: 200px;}
-  div#navigation ul {float: left;}
+
+  div.content {
+    margin-left: 0px;
+    margin-top: 200px;
+  }
+
+  div#navigation ul {
+    float: none;
+  }
+
   div#navigation a {
     text-align: center;
     float: none;
+  }
+
+  div#footer{
+    position: relative;
+  }
+}
+
+
+@media screen and (max-width: 1500px) {
+  .column {
+    width: 100%;
   }
 }
