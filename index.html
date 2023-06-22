@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <title>Carlo Gioia</title>
   <meta charset="UTF-8">
@@ -7,6 +8,9 @@
   <meta name="keywords" content="New Media Art, art, technology, visual art, Interaction Design, VR, XR, interactive media, territories, communities, rural areas">
   <meta name="author" content="Carlo Gioia">
   <meta http-equiv="content-type" name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="google-site-verification" content="5CiqMmXPWD0xsMedk-W-f1s8p73AYCvoVfItTeffGfI" />
+
   <link rel="icon" type="image/x-icon" href="src\img\favicon.png">
   <link rel="stylesheet" href="./style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +32,7 @@
     </div>
 
     <div id="header">
-      <h1><a></a></h1>
+      <h1></h1>
     </div>
 
     <div class="content">
@@ -41,9 +45,9 @@
   </div>
 
   <div id="footer" style="position: fixed;">
-    <a href="https://www.instagram.com/karlgarot/" class="fa fa-instagram overlayable"></a>
-    <a href="https://github.com/karlgarot" class="fa fa-github overlayable"></a>
-    <a href="https://www.linkedin.com/in/carlo-gioia-a48264203/" class="fa fa-linkedin overlayable"></a>
+    <a href="https://www.instagram.com/karlgarot/" class="fa fa-instagram overlayable" aria-label="Instagram"></a>
+    <a href="https://github.com/karlgarot" class="fa fa-github overlayable" aria-label="GitHub"></a>
+    <a href="https://www.linkedin.com/in/carlo-gioia-a48264203/" class="fa fa-linkedin overlayable" aria-label="LinkedIn"></a>
     <br>
     2023 &copy Carlo Gioia - Proudly hosted by GitHub &#128420;
     <br>
@@ -128,8 +132,8 @@ thing("Yo.");
 
 
   if (mediaQuery.matches) {
-    canvas_width = 200;
-    canvas_height = 200;
+    canvas_width = 250;
+    canvas_height = 250;
   }else{
     var canvas_width = 500; //Needs to be a multiple of the resolution value below.
     var canvas_height = 500; //This too.
