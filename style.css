@@ -380,7 +380,7 @@ div#footer{clear:both; width:100%; text-align:center; font-size: 13px; position:
 }
 
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1000px) {
   .column {
     width: 100%;
   }
