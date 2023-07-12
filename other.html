@@ -21,7 +21,7 @@
 
     <div id="navigation">
       <p></p>
-      <a href="/" class="overlayable">carlo gioia</a>
+      <a href="./index" class="overlayable">carlo gioia</a>
       <p></p>
       <p></p>
       <a href="./about" >about.</a>
@@ -78,7 +78,7 @@
       </div>
     </div>
 
-    <div id="footer">
+    <div id="footer" style="position: relative;">
       <a href="https://www.instagram.com/karlgarot/" class="fa fa-instagram overlayable" aria-label="Instagram"></a>
       <a href="https://github.com/karlgarot" class="fa fa-github overlayable" aria-label="GitHub"></a>
       <a href="https://www.linkedin.com/in/carlo-gioia-a48264203/" class="fa fa-linkedin overlayable" aria-label="LinkedIn"></a>
@@ -87,6 +87,24 @@
       <br>
       <br>
     </div>
+
+    <script>
+    const mediaQuery = window.matchMedia('(max-width: 600px)')
+    var prevScrollpos = window.pageYOffset;
+
+    window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+      if (mediaQuery.matches){
+
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navigation").style.top = "0";
+        } else {
+          document.getElementById("navigation").style.top = "-300px";
+        }
+        prevScrollpos = currentScrollPos;
+      }
+    }
+    </script>
 
   </body>
   </html>

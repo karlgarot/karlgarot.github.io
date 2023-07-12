@@ -16,12 +16,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body oncontextmenu="return false;" oncopy="return false" oncut="return false">
+<body oncontextmenu="return false" oncopy="return false" oncut="return false">
   <div class="container">
 
     <div id="navigation">
       <p></p>
-      <a href="/" style="background-color: black; color:white">carlo gioia</a>
+      <a href="./index" style="background-color: black; color:white">carlo gioia</a>
       <p></p>
       <p></p>
       <a href="./about" class="overlayable">about.</a>
@@ -713,6 +713,19 @@ regardless of the browser the script is running in.
 window.requestAnimationFrame = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame;
 //And this line calls the init() function defined above to start the script.
 Fluid.initialize();
+</script>
+
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navigation").style.top = "0";
+  } else {
+    document.getElementById("navigation").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
 </script>
 
 </body>

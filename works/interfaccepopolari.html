@@ -21,11 +21,11 @@
 
     <div id="navigation">
       <p></p>
-      <a href="/" class="overlayable">carlo gioia</a>
+      <a href="../index" class="overlayable">carlo gioia</a>
       <p></p>
       <p></p>
       <a href="../about" >about.</a>
-      <a href="../works" style="background-color: black; color: white;">works.</a>
+      <a href="../works_" style="background-color: black; color: white;">works.</a>
       <a href="../other" class="overlayable">other.</a>
     </div>
 
@@ -142,6 +142,25 @@
       <br>
       <br>
     </div>
+
+
+    <script>
+    const mediaQuery = window.matchMedia('(max-width: 600px)')
+    var prevScrollpos = window.pageYOffset;
+
+    window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+      if (mediaQuery.matches){
+
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navigation").style.top = "0";
+        } else {
+          document.getElementById("navigation").style.top = "-300px";
+        }
+        prevScrollpos = currentScrollPos;
+      }
+    }
+    </script>
 
   </body>
   </html>
