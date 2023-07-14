@@ -57,7 +57,7 @@
           <div class="column">
             <div class="inside_content_works">
               <a href="works/cocci">
-                <img src="src\img\cocci\cocci_thumbnail.png" alt="me" class="image_overlay">
+                <img src="src\img\cocci\cocci_thumbnail.png" alt="me" class="image_overlay" loading="eager">
                 <div class="overlay">
                   <div class="overlay_text">Cocci/<br>Frammenti di passaggi.</div>
                 </div>
@@ -84,7 +84,7 @@
             <div class="column">
               <div class="inside_content_works">
                 <a href="https://www.vanessav.net/projects/missing-out/" target="_blank">
-                  <img src="src\img\missingout\missingout.jpg" alt="me" class="image_overlay">
+                  <img src="src\img\missingout\missingout.jpg" alt="me" class="image_overlay" loading="lazy">
                   <div class="overlay">
                     <div class="overlay_text">Missing Out.</div>
                   </div>
@@ -114,7 +114,6 @@
     window.onscroll = function() {
       var currentScrollPos = window.pageYOffset;
       if (mediaQuery.matches){
-
         if (prevScrollpos > currentScrollPos) {
           document.getElementById("navigation").style.top = "0";
         } else {
